@@ -33,7 +33,6 @@ body {
 
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
@@ -67,4 +66,20 @@ body {
     width: 100%;
     padding: 0;
   }
+}
+
+#jdk23 {
+  background-image: url("./images/JDK23/rc24-java23.jpg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#environment {
+  background-image: url("./images/muliple_angular_environments/environment.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
