@@ -1,0 +1,127 @@
+How to Create Multiple Environments In Angular 2023
+In Software development, almost all applications have a need for multiple environments. In this article, we gonna learn how to manage multiple environments in angular application.
+
+1. Angular app by default comes with development and production environments. so based on your requirement create new environments.
+
+src/environments
+
+ environment.ts
+ environment.stage.ts
+ environment.prod.ts
+environment.ts
+
+export const environment = {
+  production: false,
+  apiEndpoint: 'http://localhost:3001'
+}
+environment.stage.ts
+
+export const environment = {
+  production: true,
+  apiEndpoint: 'http://localhost:3002'
+}
+environment.prod.ts
+
+export const environment = {
+  production: true,
+  apiEndpoint: 'http://localhost:3003'
+}
+3. Update angular.json config.
+
+"architect": {
+    "build": { 
+            ...
+            ...
+        },
+        "configurations": {
+            "production": {
+                "budgets": [
+                    {
+                        "type": "initial",
+                        "maximumWarning": "500kb",
+                        "maximumError": "1mb"
+                    },
+                    {
+                        "type": "anyComponentStyle",
+                        "maximumWarning": "2kb",
+                        "maximumError": "4kb"
+                    }
+                ],
+                "fileReplacements": [
+                    {
+                        "replace": "src/environments/environment.ts",
+                        "with": "src/environments/environment.prod.ts"
+                    }
+                ],
+                "outputHashing": "all"
+            },
+            "staging": {
+                "budgets": [
+                    {
+                        "type": "initial",
+                        "maximumWarning": "500kb",
+                        "maximumError": "1mb"
+                    },
+                    {
+                        "type": "anyComponentStyle",
+                        "maximumWarning": "2kb",
+                        "maximumError": "4kb"
+                    }
+                ],
+                "fileReplacements": [
+                    {
+                        "replace": "src/environments/environment.ts",
+                        "with": "src/environments/environment.stage.ts"
+                    }
+                ],
+                "outputHashing": "all"
+            },
+            "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
+            }
+        },
+        "defaultConfiguration": "production"
+    },
+    "serve": {
+        "builder": "@angular-devkit/build-angular:dev-server",
+        "configurations": {
+            "production": {
+                "browserTarget": "angular-multiple-env:build:production"
+            },
+            "staging": {
+                "browserTarget": "angular-multiple-env:build:staging"
+            },
+            "development": {
+                "browserTarget": "angular-multiple-env:build:development"
+            }
+        },
+        "defaultConfiguration": "development"
+    } 
+}
+Note:- you need to update the configurations object of build and serve.
+
+Now you have multiple environments, but you don’t need to import all files inside your application. only import the environment.ts file.
+
+4. Finally test your application.
+
+development
+
+ng serve
+ng build
+staging
+
+ng serve --c staging
+ng build --c staging
+production
+
+ng serve --c production
+ng build --c production
+Note:-
+
+--c is alias for --configuration 
+--prod is deprecated 
