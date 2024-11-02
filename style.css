@@ -68,6 +68,14 @@ body {
   }
 }
 
+#myImage {
+  background-image: url("./images/MyImage/DSC_7480.jpg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #jdk23Image {
   background-image: url("./images/JDK23/rc24-java23.jpg");
   width: 100%;
@@ -166,6 +174,70 @@ body {
 
 #htmlToPDFImg {
   background-image: url("./images/PDF/html_to_pdf.webp");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#CrossSideScript_Img {
+  background-image: url("./images/Security/CSS.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#CORS_Img {
+  background-image: url("./images/Security/CSS.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#DosImg {
+  background-image: url("./images/Security/DDOS.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#OpenIDImg {
+  background-image: url("./images/Security/open_id.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#oauthImg {
+  background-image: url("./images/Security/oauth-2-sm.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#JWTImg {
+  background-image: url("./images/Security/jwt_image.svg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#httpBasicImg {
+  background-image: url("./images/Security/SSL.jpg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#DosImg {
+  background-image: url("./images/Security/DDOS.png");
   width: 100%;
   height: 150px;
   background-repeat: no-repeat;
