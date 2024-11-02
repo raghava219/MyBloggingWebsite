@@ -147,3 +147,19 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+#d3jslibImage {
+  background-image: url("./images/D3JS/d3js.svg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#chartjsLibImage {
+  background-image: url("./images/chartJS/chartJSSample.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
