@@ -243,3 +243,99 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+#cssBootstrapImg {
+  background-image: url("./images/CSS/Bootstrap_logo.svg.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssGridImg {
+  background-image: url("./images/CSS/CSS-GRID-3.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssFlexBoxImg {
+  background-image: url("./images/CSS/CSS-FLEX-Box.webp");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssMediaQueriesImg {
+  background-image: url("./images/CSS/CSS-Media-Queries.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssResponsiveImg {
+  background-image: url("./images/CSS/Responsive.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssFloatImg {
+  background-image: url("./images/CSS/css-float.webp");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssDisplayImg {
+  background-image: url("./images/CSS/CSS-Display.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssPositionImg {
+  background-image: url("./images/CSS/css-position.webp");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssCombinatorsImg {
+  background-image: url("./images/CSS/CSS-COMBINATOR.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssCascadeImg {
+  background-image: url("./images/CSS/cascade-order.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssPropertiesImg {
+  background-image: url("./images/CSS/CSS-Properties.jpg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#cssgoodlinksImg {
+  background-image: url("./images/CSS/Canva_Logo.svg.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
