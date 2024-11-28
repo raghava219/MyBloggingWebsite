@@ -363,3 +363,27 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+#linuxLinksImg {
+  background-image: url("./images/Linux/Tux.svg.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#nodeJSLinksImg {
+  background-image: url("./images/NodeJS/Node.js_logo.svg");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#jqueryLinksImg {
+  background-image: url("./images/JQuery/jquery.png");
+  width: 100%;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
